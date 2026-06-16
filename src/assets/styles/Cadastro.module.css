@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.formulario {
+    background-color: var(--cinza-card);
+    width: 1100px;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.formulario h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: inherit;
+    color: #3b4558;
+    margin-bottom: 40px;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.campo label {
+    width: 150px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.campo input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    padding-left: 15px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.buttonn {
+    color: white;
+    background-color: var(--cinza-botao);
+    height: 35px;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.cancelar {
+    background-color: var(--branco);
+    color: var(--cinza-botao);
+    font-weight: bolder;
+    height: 35px;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.verificar {
+    color: #374151c2;
+}
+
+.fortin {
+    color: #374151c2;
+    position: relative;
+    bottom: 15px;
+    font-size: small;
+    font-weight: inherit;
+}
+
+@media (max-width: 540px) {
+    .container {
+        margin-top: 20px;
+        padding: 0 16px;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 24px 16px;
+        margin-bottom: 40px;
+    }
+
+    .formulario h1 {
+        font-size: 26px;
+        margin-bottom: 24px;
+    }
+
+    .campo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        margin-bottom: 14px;
+    }
+
+    .campo label {
+        width: auto;
+    }
+
+    .campo input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+    }
+
+    .botao {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .buttonn {
+        width: 80%;
+
+    }
+    .cancelar {
+        width: 100%;
+        min-width: 200px;
+    }
+
+    .fortin {
+        bottom: 8px;
+    }
+
+    .verificar {
+        font-size: small;
+    }
+}

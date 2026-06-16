@@ -1,0 +1,149 @@
+.titulo {
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: inherit;
+    color: var(--cinza-botao);
+}
+
+.countainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.formulinho {
+    background-color: var(--cinza-card);
+    width: 100%;
+    max-width: 1100px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 2px rgb(0 0 0 / 40%);
+    margin-bottom: 100px;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.campo label {
+    width: 80px;
+    font-weight: bold;
+}
+
+
+.campo input {
+    flex: 1;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+
+.botao {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttonn {
+    color: white;
+    background-color: var(--cinza-botao);
+    height: 35px;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.cancelar {
+    background-color: var(--branco);
+    color: var(--cinza-botao);
+    font-weight: bolder;
+    height: 35px;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.esqueci {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--cinza-botao);
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+@media (max-width: 540px) {
+    .countainer {
+        margin-top: 20px;
+        padding: 0 16px;
+    }
+
+    .formulinho {
+        padding: 28px 20px;
+        margin-bottom: 40px;
+    }
+
+    .titulo {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    .campo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .campo label {
+        width: auto;
+    }
+
+    .campo input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+    }
+
+    .botao {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .buttonn{
+        width: 80%;
+        min-width: 180px;
+    }
+    .cancelar {
+        width: 100%;
+        min-width: 200px;
+    }
+
+    .esqueci {
+        margin-top: 4px;
+    }
+}

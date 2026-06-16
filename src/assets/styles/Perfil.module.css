@@ -1,0 +1,290 @@
+.pagina {
+    min-height: 100vh;
+    background-color: #f0f2f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px 48px;
+}
+
+.topo {
+    width: 100%;
+    max-width: 580px;
+    margin-bottom: 16px;
+}
+
+.btnVoltar {
+    background-color: #1a3a8f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btnVoltar:hover {
+    background-color: #142d72;
+}
+
+.card {
+    background: var(--cinza-card);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 500px;
+    padding: 36px 40px 32px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.fotoWrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #aaa;
+    position: relative;
+    bottom: 50px;
+}
+
+.btnEditarFoto {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: background 0.2s;
+    bottom: 160px;
+    left: 140px;
+}
+
+.btnEditarFoto:hover {
+    background: #f0f0f0;
+}
+
+.dados {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.linha {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+
+.label {
+    font-weight: 700;
+    color: #111;
+    min-width: 90px;
+}
+
+.valor {
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btnEditarInline {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 0;
+    line-height: 1;
+}
+
+.senhaForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.inputSenha {
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    padding: 7px 12px;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 280px;
+    background: #fff;
+}
+
+.senhaAcoes {
+    display: flex;
+    gap: 8px;
+}
+
+.btnSalvar {
+    background: var(--cinza-botao);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 18px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btnSalvar:hover:not(:disabled) {
+    background: #142d72;
+}
+
+.btnSalvar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btnCancelar {
+    background: #888;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btnCancelar:hover {
+    background: #666;
+}
+
+.sucesso {
+    color: #1a7a3a;
+    font-weight: 600;
+    font-size: 0.92rem;
+    margin: 0;
+}
+
+.erro {
+    color: #c0392b;
+    font-weight: 600;
+    font-size: 0.92rem;
+    margin: 0;
+}
+
+.btnSair {
+    margin-top: 28px;
+    background-color: #1a3a8f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btnSair:hover {
+    background-color: #142d72;
+}
+
+.edita {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    left: 220px;
+    bottom: 20px;
+}
+
+@media (max-width: 540px) {
+    .pagina {
+        padding: 16px 12px 32px;
+    }
+
+    .topo {
+        margin-bottom: 12px;
+    }
+
+    .btnVoltar {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+    }
+
+    .card {
+        padding: 24px 20px 24px;
+        gap: 16px;
+        min-height: 340px;
+        border-radius: 12px;
+    }
+
+    .edita {
+        left: 15px;
+        bottom: 15px;
+        align-self: flex-end;
+        margin-bottom: -12px;
+    }
+
+    .fotoWrapper {
+        width: 120px;
+        height: 120px;
+    }
+
+    .foto {
+        width: 130px;
+        height: 130px;
+        bottom: 40px;
+    }
+
+    .btnEditarFoto {
+        bottom: 128px;
+        left: 108px;
+    }
+
+    .dados {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .linha {
+        font-size: 0.9rem;
+        gap: 4px;
+    }
+
+    .label {
+        min-width: 80px;
+        font-size: 0.9rem;
+    }
+
+    .valor {
+        font-size: 0.9rem;
+    }
+
+    .inputSenha {
+        max-width: 100%;
+        font-size: 0.85rem;
+    }
+
+    .btnSair {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        padding: 10px 28px;
+    }
+}

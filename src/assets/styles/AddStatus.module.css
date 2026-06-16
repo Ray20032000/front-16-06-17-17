@@ -1,0 +1,140 @@
+.formulario {
+    display: flex;
+}
+
+.formulario input {
+    border: none;
+    padding-left: 20px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.2);
+    height: 33px;
+    width: 900px;
+    margin: 10px 5px 5px 5px;
+}
+
+.countainer h1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 40px;
+    color: var(--cinza-botao);
+    padding: 30px;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.countainer {
+    background-color: var(--cinza-card);
+    height: 400px;
+    margin: 15px;
+    border-radius: 10px;
+
+}
+
+.pergunta {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 90px;
+    margin: 40px;
+}
+
+.voltar {
+    background-color: #1a3a8f;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    left: 1100px;
+    top: 20px;
+}
+
+.cancelar {
+    background-color: var(--branco);
+    color: var(--cinza-botao);
+    font-weight: bolder;
+    height: 35px;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+}
+
+.cadastra {
+    background-color: var(--cinza-botao);
+    color: var(--branco);
+    font-weight: bolder;
+    height: 35px;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    margin-left: 10px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 620px;
+    top: 150px;
+}
+
+@media (max-width: 540px) {
+    .countainer {
+        margin: 10px 8px;
+        border-radius: 10px;
+        height: 300px;
+        padding-bottom: 24px;
+    }
+
+    .countainer h1 {
+        font-size: 1.5rem;
+        padding: 20px 16px 10px;
+        margin-top: 16px;
+    }
+
+    .formulario {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 16px;
+    }
+
+    .formulario input {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 6px 0 0 0;
+    }
+
+    .pergunta {
+        flex-direction: column;
+        align-items: flex-start;
+        position: static;
+        left: unset;
+        margin: 21px 0 0 0;
+    }
+
+    .botao {
+        position: static;
+        right: unset;
+        top: unset;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 52px;
+    }
+
+    .cancelar,
+    .cadastra {
+        width: 100%;
+        max-width: 280px;
+        margin: 0;
+    }
+}

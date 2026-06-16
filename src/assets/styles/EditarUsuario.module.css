@@ -1,0 +1,226 @@
+.pagina {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+.pagina main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+
+.formulario {
+    background-color: var(--cinza-card);
+    border-radius: 8px;
+    padding: 40px 48px;
+    width: 100%;
+    min-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.formulario h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 28px;
+}
+
+/* ── Campos ── */
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.campo label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1a1a2e;
+    min-width: 120px;
+    text-align: left;
+}
+
+.campo input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.campo input:focus {
+    border-color: #1f3a7a;
+}
+
+.campo input[type="file"] {
+    padding: 6px 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.campo input:disabled {
+    background-color: #e8e8e8;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* ── Dica de senha ── */
+.fortin {
+    font-size: 0.78rem;
+    color: #555;
+    margin: -10px 0 14px 136px;
+}
+
+/* ── Mensagens de feedback ── */
+.erro {
+    color: #c0392b;
+    font-size: 0.88rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.sucesso {
+    color: #27ae60;
+    font-size: 0.88rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* ── Botões ── */
+.botao {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.cancelar {
+    padding: 10px 36px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--branco-cinzento);
+    color: var(--cinza-botao);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+
+.buttonn {
+    padding: 10px 36px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cinza-botao);
+    color: var(--branco-cinzento);
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.buttonn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cinza-botao);
+    margin: 0;
+    text-align: center;
+}
+
+.op {
+    display: flex;
+    position: absolute;
+    bottom: 200px;
+    font-size: small;
+
+}
+
+@media (max-width: 540px) {
+    .pagina main {
+        padding: 16px 12px 32px;
+        align-items: flex-start;
+    }
+
+    .formulario {
+        min-width: unset;        /* remove o min-width: 800px que vaza */
+        width: 100%;
+        padding: 20px 16px;
+        border-radius: 10px;
+        gap: 0;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .campo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-bottom: 12px;
+    }
+
+    .campo label {
+        min-width: unset;
+        font-size: 0.9rem;
+    }
+
+    .campo input {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.9rem;
+    }
+
+    .campo input[type="file"] {
+        padding: 6px 10px;
+    }
+
+    .op {
+        position: static;       /* remove o bottom: 200px absoluto */
+        font-size: 0.75rem;
+        margin: -8px 0 10px 0;
+    }
+
+    .fortin {
+        margin-left: 0;
+        font-size: 0.75rem;
+    }
+
+    .botao {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .cancelar{
+        width: 100%;
+        min-width: 220px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .buttonn {
+        width: 100%;
+        max-width: 220px;
+        padding: 10px 0;
+        text-align: center;
+    }
+}

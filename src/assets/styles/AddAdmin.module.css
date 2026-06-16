@@ -1,0 +1,177 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.formulario {
+    background-color: #d3d5db;
+    width: 1100px;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.formulario h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: inherit;
+    color: #3b4558;
+    margin-bottom: 40px;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.campo input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    padding-left: 15px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Input de arquivo escondido */
+.campo input[type="file"] {
+    display: none;
+}
+
+/* Substituto visual do input file, igual aos outros campos */
+.fileLabel {
+    flex: 1;
+    height: 40px;
+    border: none;
+    padding-left: 15px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #555;
+}
+
+.fileLabel span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.buttonn {
+    color: white;
+    background-color: var(--cinza-botao);
+    height: 35px;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.cancelar {
+    background-color: var(--branco);
+    color: var(--cinza-botao);
+    font-weight: bolder;
+    height: 35px;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.erro {
+    color: #c0392b;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sucesso {
+    color: #27ae60;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 540px) {
+    .container {
+        margin: 10px 8px;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 20px 16px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+
+    .formulario h1 {
+        font-size: 1.6rem;
+        margin-bottom: 24px;
+    }
+
+    .campo {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 14px;
+        gap: 4px;
+    }
+
+    .campo label {
+        width: auto;
+        font-size: 0.9rem;
+    }
+
+    .campo input {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.9rem;
+        height: 38px;
+        padding: 8px;
+    }
+
+    .fileLabel {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.9rem;
+        height: 38px;
+        padding: 8px;
+    }
+
+    .botao {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .buttonn{
+        width: 100%;
+        max-width: 220px;
+    }
+    .cancelar {
+        width: 100%;
+        min-width: 220px;
+    }
+}

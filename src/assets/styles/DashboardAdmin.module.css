@@ -1,0 +1,34 @@
+.buttonn {
+    color: var(--preto);
+    background-color: var(--cinza);
+    height: 32px;
+    width: 160px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin: 7px 10px;
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+}
+
+@media (max-width: 540px) {
+    .bemvindo {
+        font-size: 22px;
+        padding: 10px 0px 0px 5px;
+    }
+    .buttonn {
+        font-size: 12px;
+        max-width: 130px;
+        position: relative;
+        left: 5px;
+
+    }
+
+    .chamados {
+        padding: 5px;
+    }
+}
+
+

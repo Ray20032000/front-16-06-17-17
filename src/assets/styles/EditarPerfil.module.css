@@ -1,0 +1,211 @@
+.pagina {
+    min-height: calc(100vh - 60px - 200px);
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: var(--cinza-card);
+    border-radius: 8px;
+    padding: 40px 60px;
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cinza-botao);
+    margin: 0;
+    text-align: center;
+}
+
+
+.fotoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #b0b0b0;
+}
+
+.btnCarregarImagem {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 0.82rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0;
+}
+
+.btnCarregarImagem:hover {
+    text-decoration: underline;
+}
+
+
+.campos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    min-width: 80px;
+    text-align: right;
+}
+
+.input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    background-color: #fff;
+    color: #1a1a1a;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #1a3a8f;
+}
+
+
+.acoes {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.btnCancelar {
+    padding: 12px 40px;
+    background-color: #fff;
+    color: #1a1a1a;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btnCancelar:hover {
+    background-color: #e8e8e8;
+}
+
+.btnEditar {
+    padding: 12px 40px;
+    background-color: var(--cinza-botao);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btnEditar:hover {
+    background-color: #142247;
+}
+
+.btnEditar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ── Feedback ── */
+.erro {
+    color: #cc0000;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.sucesso {
+    color: #007700;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+@media (max-width: 540px) {
+    .pagina {
+        padding: 16px 12px 32px;
+        align-items: flex-start;
+    }
+
+    .card {
+        padding: 24px 18px;
+        gap: 16px;
+        border-radius: 12px;
+    }
+
+    .titulo {
+        font-size: 1.4rem;
+    }
+
+    .foto {
+        width: 100px;
+        height: 100px;
+    }
+
+    .campos {
+        gap: 10px;
+    }
+
+    .campo {
+        flex-direction: column;  /* label acima do input */
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .label {
+        min-width: unset;
+        text-align: left;
+        font-size: 0.88rem;
+    }
+
+    .input {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 7px 10px;
+    }
+
+    .acoes {
+        width: 100%;
+        gap: 12px;
+        margin-top: 4px;
+    }
+
+    .btnCancelar,
+    .btnEditar {
+        flex: 1;           /* divide o espaço igualmente */
+        padding: 10px 0;
+        font-size: 0.92rem;
+        text-align: center;
+    }
+}
